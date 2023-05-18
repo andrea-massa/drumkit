@@ -31,3 +31,7 @@ h1{
             border-radius: 15px;
             background-color: white;
         }
+        
+        .playing{
+            border: solid yellow;
+        }

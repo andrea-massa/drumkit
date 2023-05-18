@@ -14,8 +14,8 @@ window.addEventListener("load", (event) => {
 
             //Keyboard keys make it play sound
             document.addEventListener('keydown', (event) => {
-                if (event.key.toLowerCase() === this.key.toLowerCase() && !this.isPlaying) {
-                  this.playSound();                  
+                if (event.key.toLowerCase() === this.key.toLowerCase() && !this.isPlaying) {                    
+                    this.playSound();                  
                 }
               });            
         }
@@ -23,7 +23,7 @@ window.addEventListener("load", (event) => {
         playSound(){
             this.sound.currentTime = 0;
             this.sound.play();
-            this.isPlaying = true;
+            this.isPlaying = true;            
             this.sound.addEventListener('ended', (e) => {
                 this.isPlaying = false;
             })
@@ -35,9 +35,9 @@ window.addEventListener("load", (event) => {
 
     
     let audioTom1 = new Audio('./sounds/tom-1.mp3');
-    let audioTom2 = new Audio('./sounds/tom-1.mp3');
-    let audioTom3 = new Audio('./sounds/tom-1.mp3');
-    let audioTom4 = new Audio('./sounds/tom-1.mp3');
+    let audioTom2 = new Audio('./sounds/tom-2.mp3');
+    let audioTom3 = new Audio('./sounds/tom-3.mp3');
+    let audioTom4 = new Audio('./sounds/tom-4.mp3');
     let audioSnare = new Audio('./sounds/snare.mp3');
     let audioKick = new Audio('./sounds/kick-bass.mp3');
     let audioCrash = new Audio('./sounds/crash.mp3');
